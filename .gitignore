@@ -1,0 +1,9 @@
+.meteor-img-upload/
+img-upload/
+.cli/node_modules/
+.meteor/uploads/uploads/
+.cli/drhtmls/
+.cli/.env
+node_modules/
+.meteor/uploads/
+npm-debug.log

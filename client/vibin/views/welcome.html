@@ -1,0 +1,39 @@
+<md-content flex="" class="setUpSchool welcomeCnt body-bg">
+	<div layout="row" layout-align="center" class="welcomeCnt md-padding content" flex="">
+		<div class="md-whiteframe-z1 md-padding body-cnt" flex="80">
+			<div layout="row" layout-sm="column" style="height:98%;padding: 2%;">
+				<div flex="">
+					<md-content flex layout="column" layout-align="center center" style="height:98%;">
+						<p style="margin-top:10px">Would you like to setup your school </p>
+						<md-button ui-sref="setupschool" class="md-raised md-primary">Set up a school
+						</md-button>
+
+					<!-- 	<p class="mTop-10">OR</p>
+						
+						<p>Would you like to send out your first prefilled sample students report to your email id?</p>
+						<md-button ui-sref="demoReportGenerate" class="md-raised md-primary">First prefilled sample student report</md-button> -->
+					</md-content>
+				</div>
+			</div>
+		</div>
+	</div>
+</md-content>
+<div>
+	<div>
+	<form>
+		<input type="text" ng-model="item" class="form-control">
+		<p>
+			{{item}}
+		</p>
+		<button ng-click="saveItem()" class="btn btn-primary">submit</button>
+	</form>
+	<h2>To do</h2>
+	<ul ng-repeat="it in display">
+		<li>{{ it.name}}</li>
+		
+		<button ng-click="updateItem(it._id)" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Update</button>
+		<button ng-click="deleteItem(it._id)" class="btn btn-success">Delete</button>
+		 
+	</ul>
+</div>
+</div>
