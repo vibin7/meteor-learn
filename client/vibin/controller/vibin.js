@@ -29,6 +29,7 @@ angular.module('app').directive('vibin', function() {
     
     $scope.updateItem = function(id){ 
       var newValue = prompt("Enter your new value", id);
+      if( newValue != "" && newValue != null){
       let obj = {
         _id : id,
         new : newValue
@@ -41,6 +42,7 @@ angular.module('app').directive('vibin', function() {
           console.log("update success");
         }
       })
+    }
     }
     Meteor.autorun(function() {
       console.log(Content.find().fetch());
