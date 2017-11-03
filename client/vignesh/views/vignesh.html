@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<div class="headertxt">
+		<span class="col-sm-6"><input type="text" class="form-control" ng-model="firstcon"></span><button class="btn btn-md btn-primary" ng-click="savefirstcon()">Submit</button>
+	</div>
+		<div class="col-sm-12 listtxt" ng-repeat="x in displaycon">{{x.title}}<button class="btn btn-warning btn-sm" ng-click="updatecon(x._id)">Update</button> <button class="btn btn-danger btn-sm" ng-click="deletecon(x._id)">Delete</button> </div>
+
+
+
+
+
+
+
+
+		<!-- Modal
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title">Modal Header</h4>
+			</div>
+			<div class="modal-body">
+				<span class="col-sm-6"><input type="text" class="form-control"></span><button class="btn btn-md btn-primary" ng-click="updatecon()">Submit</button>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div> -->
