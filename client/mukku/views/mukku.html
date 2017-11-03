@@ -1,0 +1,14 @@
+<!-- <div>
+	
+	<p ng-repeat="x in displayang">{{x.name}} <span><button ng-click="delete(x._id)">close</button></span><span><button ng-click="updateItem(x._id)">update</button></span><br></p>
+	
+</div> -->
+<input type="text" ng-model='name' name="input"><span><button ng-click='addMethod()'>Push</button></span>
+<br>
+<ul ng-repeat="x in displayang">
+	<li>{{ x.name}}</li>
+	
+	<button ng-click="updateItem(x._id)" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Update</button>
+	<button ng-click="delete(x._id)" class="btn btn-success">Delete</button>
+	 
+</ul>
